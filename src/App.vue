@@ -45,22 +45,31 @@
       <div class="main">
         <h3 class="section-title">Latest news</h3>
         <div class="news-item">
-          <h4 class="news-title">Sample News Title</h4>
+          <h4 class="news-title">November 11, 22:15 PM</h4>
           <p class="news-description">
-            This is a short description of the news content to show layout
-            styling.
+            Министр по продаже бананов увеличит поставки в республику с целью
+            оздоровить и осчастливить население.
           </p>
         </div>
         <div class="news-item">
-          <h4 class="news-title">Another News Title</h4>
+          <h4 class="news-title">November 11, 4:00 PM</h4>
           <p class="news-description">
-            Another piece of news content goes here to fill up the main section.
+            «Фонд дикой природы» поднял вопрос об уменьшении папулезации бабочек
+            по причине их переселения в животы романтиков.
           </p>
         </div>
         <div class="news-item">
-          <h4 class="news-title">Another News Title</h4>
+          <h4 class="news-title">November 10, 2:45 PM</h4>
           <p class="news-description">
-            Another piece of news content goes here to fill up the main section.
+            Миллионы одиноких носков выстроились в очередь на программу “Жди
+            меня” в надежде найти свою потерянную половинку.
+          </p>
+        </div>
+        <div class="news-item">
+          <h4 class="news-title">November 10, 10:30 AM</h4>
+          <p class="news-description">
+            Министр здравоохранения Лимон Малинов ставит на повестку вопрос о
+            здравии Лидии Александровны.
           </p>
         </div>
       </div>
