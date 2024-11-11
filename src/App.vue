@@ -20,7 +20,7 @@
       <img
         class="logo"
         :class="{ hidden: showMenu || showInput }"
-        src="/logonews.png"
+        src="../public/logonews.png"
       />
       <img
         src="/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
