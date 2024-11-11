@@ -68,7 +68,7 @@
         <p>© 2024 AndyNewsCorporation Все права защищены.</p>
         <nav class="footer-links">
           <div class="contacts">
-            <p>Если у вас есть пожелания и рекомендации - напишите нам</p>
+            <p>If you have wishes and recommendations - write to us</p>
             <a class="insta_img" href="https://www.instagram.com/andybaltenko/"
               ><img src="icons8-instagram.svg" alt=""
             /></a>
@@ -121,7 +121,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  width: 375px;
   margin: 0 auto;
   background-color: #2c2c2c;
   color: #e0e0e0;
