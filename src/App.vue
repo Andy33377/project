@@ -141,6 +141,7 @@ hr {
 
 .main {
   margin-top: 20px;
+  min-height: 100vh;
 }
 
 .section-title {
