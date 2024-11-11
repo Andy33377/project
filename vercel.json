@@ -1,0 +1,10 @@
+{
+  "protectedRoutes": [
+    {
+      "path": "/",
+      "domains": [
+        "https://news-with-andy-cg3vzcogx-andy33377s-projects.vercel.app"
+      ]
+    }
+  ]
+}
