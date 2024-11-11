@@ -108,28 +108,6 @@ export default {
 </script>
 
 <style scoped>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  margin: 0 !important;
-  padding: 0;
-}
-
-.container {
-  width: 375px;
-  margin: 0 auto;
-  background-color: #2c2c2c;
-  color: #e0e0e0;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -234,14 +212,6 @@ hr {
   display: none;
 }
 
-@keyframes borderExpand {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
 .footer {
   background-color: #2c2c2c;
   color: #e0e0e0;
