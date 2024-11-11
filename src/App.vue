@@ -1,84 +1,88 @@
 <template>
   <div class="container">
-    <header class="header">
-      <img
-        src="/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-        alt="Иконка меню"
-        class="icon"
-        @click="toggleMenu"
-      />
-      <ul v-if="showMenu" class="dropdown-menu">
-        <li @click="handleMenuClick('Элемент 1')">тра</li>
-      </ul>
-      <ul v-if="showMenu" class="dropdown-menu">
-        <li @click="handleMenuClick('Элемент 2')">ля</li>
-      </ul>
-      <ul v-if="showMenu" class="dropdown-menu">
-        <li @click="handleMenuClick('Элемент 3')">ля</li>
-      </ul>
+    <div class="wrapper">
+      <header class="header">
+        <img
+          src="/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+          alt="Иконка меню"
+          class="icon"
+          @click="toggleMenu"
+        />
+        <ul v-if="showMenu" class="dropdown-menu">
+          <li @click="handleMenuClick('Элемент 1')">тра</li>
+        </ul>
+        <ul v-if="showMenu" class="dropdown-menu">
+          <li @click="handleMenuClick('Элемент 2')">ля</li>
+        </ul>
+        <ul v-if="showMenu" class="dropdown-menu">
+          <li @click="handleMenuClick('Элемент 3')">ля</li>
+        </ul>
 
-      <img
-        class="logo"
-        :class="{ hidden: showMenu || showInput }"
-        src="/logonews.png"
-      />
-      <img
-        src="/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-        @click="
-          showInput = true;
-          showMenu = false;
-        "
-        alt="Иконка поиска"
-        class="icon"
-      />
-      <input
-        class="input_search"
-        type="text"
-        v-if="showInput"
-        v-model="inputValue"
-        @blur="showInput = false"
-        placeholder="кто ищет тот найдет, но не здеся..("
-      />
-    </header>
-    <hr />
-    <div class="main">
-      <h3 class="section-title">Latest news</h3>
-      <div class="news-item">
-        <h4 class="news-title">Sample News Title</h4>
-        <p class="news-description">
-          This is a short description of the news content to show layout
-          styling.
-        </p>
+        <img
+          class="logo"
+          :class="{ hidden: showMenu || showInput }"
+          src="/logonews.png"
+        />
+        <img
+          src="/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+          @click="
+            showInput = true;
+            showMenu = false;
+          "
+          alt="Иконка поиска"
+          class="icon"
+        />
+        <input
+          class="input_search"
+          type="text"
+          v-if="showInput"
+          v-model="inputValue"
+          @blur="showInput = false"
+          placeholder="кто ищет тот найдет, но не здеся..("
+        />
+      </header>
+      <hr />
+      <div class="main">
+        <h3 class="section-title">Latest news</h3>
+        <div class="news-item">
+          <h4 class="news-title">Sample News Title</h4>
+          <p class="news-description">
+            This is a short description of the news content to show layout
+            styling.
+          </p>
+        </div>
+        <div class="news-item">
+          <h4 class="news-title">Another News Title</h4>
+          <p class="news-description">
+            Another piece of news content goes here to fill up the main section.
+          </p>
+        </div>
+        <div class="news-item">
+          <h4 class="news-title">Another News Title</h4>
+          <p class="news-description">
+            Another piece of news content goes here to fill up the main section.
+          </p>
+        </div>
       </div>
-      <div class="news-item">
-        <h4 class="news-title">Another News Title</h4>
-        <p class="news-description">
-          Another piece of news content goes here to fill up the main section.
-        </p>
-      </div>
-      <div class="news-item">
-        <h4 class="news-title">Another News Title</h4>
-        <p class="news-description">
-          Another piece of news content goes here to fill up the main section.
-        </p>
-      </div>
+      <footer class="footer">
+        <div class="footer-content">
+          <p>© 2024 AndyNewsCorporation Все права защищены.</p>
+          <nav class="footer-links">
+            <div class="contacts">
+              <p>If you have wishes and recommendations - write to us</p>
+              <a
+                class="insta_img"
+                href="https://www.instagram.com/andybaltenko/"
+                ><img src="icons8-instagram.svg" alt=""
+              /></a>
+              <a class="telega_img" href="https://t.me/andybaltenko"
+                ><img src="icons8-telegram.svg" alt=""
+              /></a>
+            </div>
+          </nav>
+        </div>
+      </footer>
     </div>
-    <footer class="footer">
-      <div class="footer-content">
-        <p>© 2024 AndyNewsCorporation Все права защищены.</p>
-        <nav class="footer-links">
-          <div class="contacts">
-            <p>If you have wishes and recommendations - write to us</p>
-            <a class="insta_img" href="https://www.instagram.com/andybaltenko/"
-              ><img src="icons8-instagram.svg" alt=""
-            /></a>
-            <a class="telega_img" href="https://t.me/andybaltenko"
-              ><img src="icons8-telegram.svg" alt=""
-            /></a>
-          </div>
-        </nav>
-      </div>
-    </footer>
   </div>
 </template>
 
@@ -108,11 +112,17 @@ export default {
 </script>
 
 <style scoped>
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 10px;
+  padding: 10px 0;
   position: relative;
 }
 
@@ -141,7 +151,8 @@ hr {
 
 .main {
   margin-top: 20px;
-  min-height: 100vh;
+  /* min-height: calc(100vh - 178px); */
+  flex-grow: 1;
 }
 
 .section-title {
